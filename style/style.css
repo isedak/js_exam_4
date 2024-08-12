@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+input[type=text] {
+    padding: 8px;
+    border: 1px solid lightgray;
+    resize: none;
+    flex-grow: 1;
+    width: 100%;
+    height: 40px;
+    width: 100%;
+}
+
+input[type=text]:focus {
+    border: none;
+    border: 1px solid rgba(15, 196, 29, 0.5);
+}
+
+button {
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: none;
+    line-height: 100%;
+}
+
+input[type=text],
+button {
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    border-radius: 15px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+label {
+    font-weight: 500;
+    font-size: 16px;
+    color: gray;
+}
+
+::placeholder {
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.5);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 128, 128, .8);
+}
+
+.background {
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(178, 178, 178);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px auto;
+    min-width: 280px;
+    max-width: 860px;
+    gap: 25px;
+}
+
+.content-box {
+    background: rgba(15, 196, 29, 0.2);
+    padding: 16px;
+    height: 77vh;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid rgba(15, 196, 29, 0.2);
+    overflow-y: auto;
+}
+
+.task-box {
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.task-column {
+    gap: 25px
+}
+
+.tiny-column {
+    flex: auto 25%;
+}
+
+.wide-column {
+    flex: 1;
+}
+
+.green-text {
+    color: rgb(10, 150, 22);
+}
+
+.title {
+    text-align: center;
+}
+
+.simple-text {
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.btn-custom {
+    display: flex;
+    justify-content: center;
+    min-width: 56px;
+    max-width: 72px;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 8px;
+    align-content: space-around;
+}
+
+.btn-green {
+    background-color: rgba(15, 196, 29, 0.5);
+}
+
+.btn-green:hover,
+.btn-green:focus {
+    background-color: rgb(15, 196, 29);
+}
+
+.btn-small {
+    padding: 8px;
+    outline: none;
+    font-weight: 700;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    min-width: 30px;
+}
+
+.btn-state {
+    background-color: rgba(33, 150, 243, 0.5);
+}
+
+.btn-state:hover {
+    background-color: rgb(33, 150, 243);
+}
+
+.btn-remove {
+    background-color: pink;
+}
+
+.btn-remove:hover {
+    background-color: rgb(250, 118, 141);
+}
+
+@media screen and (min-width: 320px) {
+
+    .content-row,
+    form>.flex-row {
+        flex-direction: column;
+        align-items: inherit;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 560px) {
+    form>.flex-row {
+        flex-direction: row;
+    }
+
+    form>.flex-row {
+        align-items: center;
+    }
+
+    .container {
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 790px) {
+    .content-row {
+        flex-direction: row;
+    }
+}

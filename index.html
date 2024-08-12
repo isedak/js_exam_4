@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3-6-0.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Exam_4_izida_kubekova</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <form id="form">
+                <div class="flex-row">
+                    <div class="flex-column tiny-column">
+                        <label for="task-text">Add a new task</label>
+                    </div>
+                    <div class="flex-column wide-column">
+                        <input type="text" id="task-text" placeholder="Enter task text here..." required>
+                    </div>
+                    <div class="flex-column tiny-column">
+                        <button type="submit" id="add-btn" class="btn-custom btn-green">Add</button>
+                    </div>
+                </div>
+            </form>
+            <div class="flex-row content-row" id="content">
+                <div class="flex-column content-box">
+                    <h3 class="title green-text">To Do</h3>
+                    <div id="to-do-list">
+                    </div>
+                </div>
+                <div class="flex-column content-box">
+                    <h3 class="title green-text">In Progress</h3>
+                    <div id="progress-list">
+                    </div>
+                </div>
+                <div class="flex-column content-box">
+                    <h3 class="title green-text">Done</h3>
+                    <div id="done-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
